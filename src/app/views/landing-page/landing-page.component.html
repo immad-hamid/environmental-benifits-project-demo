@@ -1,3 +1,23 @@
-<p>
-  landing-page works!
-</p>
+<div 
+  *ngIf="(listingData$ | async) as listing; else loading" 
+  class="col-sm-12">
+  <div class="row">
+    <div 
+      *ngFor="let list of listing; index as i" 
+      class="col-md-6"
+      [ngClass]="{
+        'pr-md-2': i % 2 === 0,
+        'pl-md-2': i % 2 !== 0
+      }">
+      <app-tile-card 
+        [list]="list">
+      </app-tile-card>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="text-center">
+    Loading...
+  </div>
+</ng-template>

@@ -1,1 +1,25 @@
-@import '~bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+  background-color: #eeeeee;
+}
+
+.rb-slab {
+  font-family: "Roboto Slab", serif;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.text-pink {
+    color: #DB4779;
+}
+
+.text-green {
+    color: #00C043;
+}
+
+.text-grey {
+    color: #4E4E4E;
+}

@@ -1,0 +1,11 @@
+.jumbotron {
+    height: 202px;
+    background-color: #C1F7AB;
+    .header-bg {
+        height: 200px;
+        background-image: url('src/assets/banner/banner-thumbnail.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+}

@@ -1,3 +1,29 @@
-<p>
-  tile-card works!
-</p>
+<div class="application-card mb-3">
+  <div class="applicaiton-card-header">
+    <div class="buy-box pt-3 pr-3 text-right">
+      <div *ngIf="list?.sellableStatus" class="d-inline-block text-center">
+        <button class="btn btn-success">
+          Buy Now
+        </button>
+        <span class="oswald text-white text-bg d-block mt-1 pt-1 pb-1 pr-2 pl-2"
+          >{{ list?.price | currency }} / {{ list?.unit }}</span
+        >
+      </div>
+    </div>
+    <h3 
+      class="oswald text-white text-bg text-uppercase d-inline-block ml-3 pt-1 pb-1 pr-2 pl-2"
+      [ngClass]="{
+        'mt-5': list?.sellableStatus,
+        'mt-10': !list?.sellableStatus
+      }">
+      {{ list?.title }}
+    </h3>
+  </div>
+  <div class="application-card-body pl-3 pr-3 pt-3 pb-2">
+    <h5 class="text-pink rb-slab">
+      {{ list?.subTitle }}
+    </h5>
+    <h5 class="text-green rb-slab">{{ list?.offset }}</h5>
+    <p class="text-grey rb-slab">{{ list?.description }}</p>
+  </div>
+</div>

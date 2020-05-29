@@ -1,0 +1,26 @@
+.application-card {
+    background-color: #ffffff;
+    .applicaiton-card-header {
+        height: 200px;
+        background-image: url('src/assets/cards-images/tile-image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .text-bg {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .btn {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    .application-card-body {
+        h5 {
+            font-size: 17px;
+        }
+    }
+}
+
+.mt-10 {
+    margin-top: 128px;
+}
